@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class StockUom(models.Model):
+class StockUomCompute(models.Model):
      _inherit = 'stock.valuation.layer'
     
      @api.depends('product_id')
