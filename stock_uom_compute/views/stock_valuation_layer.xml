@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="stock_uom_compute">
+      <field name="name">stock.uom.compute</field>
+      <field name="model">stock.valuation.layer</field>
+      <field name="inherit_id" ref="stock_account.stock_valuation_layer_tree"/>
+      <field name="arch" type="xml">
+     
+        <tree>
+            <field name="total_volume" sum="Total"/>
+            <field name="total_weight" sum="Total"/>
+        </tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>
