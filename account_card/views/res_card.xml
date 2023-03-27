@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+<!--        form view       -->
+        <record id="view_card_form" model="ir.ui.view">
+            <field name="name">res.card.form</field>
+            <field name="model">res.card</field>
+            <field name="arch" type="xml">
+                <form string="Card">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+<!--        tree view       -->
+        <record id="view_card_tree" model="ir.ui.view">
+            <field name="name">res.card.tree</field>
+            <field name="model">res.card</field>
+            <field name="arch" type="xml">
+                <tree string="Cards" sample="1">
+                    <field name="name"/>
+                    
+                </tree>
+            </field>
+        </record>
+
+<!--        View action for card views        -->
+        <record id="action_res_card_form" model="ir.actions.act_window">
+            <field name="name">Cards</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.card</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create a new credit card
+              </p><p>
+                Create and manage credit cards for the companies that will be managed by Odoo from here.
+              </p>
+            </field>
+        </record>
+<!--        Menu item       -->
+        <menuitem action="action_res_card_form" id="menu_action_res_card_form" parent="account.account_banks_menu" sequence="2"/>
+    </data>
+</odoo>
