@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="True">
+        <record id="card_visa" model="res.card">
+            <field name="name">Visa</field>
+        </record>
+        <record id="card_visa_debit" model="res.card">
+            <field name="name">Visa Débito</field>
+        </record>
+        <record id="card_amex" model="res.card">
+            <field name="name">Amex</field>
+        </record>
+        <record id="card_mastercard" model="res.card">
+            <field name="name">Mastercard</field>
+        </record>
+        <record id="card_maestro" model="res.card">
+            <field name="name">Maestro</field>
+        </record>
+        <record id="card_naranja_x" model="res.card">
+            <field name="name">Naranja X</field>
+        </record>
+                
+    </data>
+</odoo>
