@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_account_voucherbook_tree" model="ir.ui.view">
+        <field name="name">account.voucherbook.tree</field>
+        <field name="model">account.voucherbook</field>
+        <field name="arch" type="xml">
+            <tree string="Voucherbooks" editable="bottom">
+                <field name="issue_voucher_subtype"/>
+                <field name="name"/>
+                <field name="next_number"/>
+                <field name="range_to"/>
+                <field name="numerate_on_printing"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_account_voucherbook_form" model="ir.ui.view">
+        <field name="name">account.voucherbook.form</field>
+        <field name="model">account.voucherbook</field>
+        <field name="arch" type="xml">
+            <form string="Voucherbooks">
+                <header string="Voucherbooks">
+                    <field name="state" widget="statusbar" clickable="True"/>
+                </header>
+                <sheet string="Voucherbooks">
+                    <group>
+                        <field name="name" invisible="1"/>
+                        <field name="sequence_id" groups="base.group_no_one"/>
+                        <field name="next_number"/>
+                        <field name="issue_voucher_subtype"/>
+                        <field name="range_to"/>
+                        <field name="numerate_on_printing"/>
+                        <field name="report_template"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
