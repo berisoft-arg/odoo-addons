@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_journal_dashboard_kanban_view_inherited" model="ir.ui.view">
+        <field name="name">account.journal.dashboard.kanban.inherited</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='JournalBodyBankCash']//div[hasclass('o_kanban_primary_right')]" position="inside">
+                <div t-if="dashboard.show_third_vouchers">
+                    <div class="row">
+                        <div class="col-6">
+                            <a role="menuitem" type="object" name="open_action_vouchers" context="{'voucher_type': 'third_voucher'}">
+                                <t t-esc="dashboard.num_holding_third_vouchers"/>
+                                <t>Third Voucher(s) on hand</t>
+                            </a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <span><t t-esc="dashboard.holding_amount"/></span>
+                        </div>
+                    </div>
+                </div>
+                <div t-if="dashboard.show_issue_vouchers">
+                    <div class="row">
+                        <div class="col-6">
+                            <a role="menuitem" type="object" name="open_action_vouchers" context="{'voucher_type': 'issue_voucher'}">
+                                <t t-esc="dashboard.num_handed_issue_vouchers"/>
+                                <t>Issue Voucher(s) handed</t>
+                            </a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <span><t t-esc="dashboard.handed_amount"/></span>
+                        </div>
+                    </div>
+                    <div t-if="dashboard.num_vouchers_to_numerate">
+                        <div class="row">
+                            <div class="col-12">
+                                <a role="menuitem" type="object" name="action_vouchers_to_numerate">
+                                    <t t-esc="dashboard.num_vouchers_to_numerate"/>
+                                    <t t-if="dashboard.num_vouchers_to_numerate == 1">Voucher to print and numerate</t>
+                                    <t t-if="dashboard.num_vouchers_to_numerate != 1">Vouchers to print and numerate</t>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
