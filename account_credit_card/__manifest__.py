@@ -26,8 +26,8 @@
     'data': [
         'security/ir.model.access.csv',
         'views/res_card.xml',
-	    'data/account_payment_method_data.xml',
-	    'data/card_data.xml',
+	'data/account_payment_method_data.xml',
+	'data/card_data.xml',
     ],
     # only loaded in demonstration mode
     
