@@ -12,7 +12,7 @@ class AccountPayment(models.Model):
     voucher_ids = fields.Many2many('account.voucher.credit.card', string='Vouchers',
         copy=False, readonly=True, states={'draft': [('readonly', False)]}, auto_join=True,)
     
-    check_id = fields.Many2one('account.voucher.credit.card', store=True, string='Voucher',)
+    voucher_id = fields.Many2one('account.voucher.credit.card', store=True, string='Voucher',)
     
     name_card = fields.Many2one('res.card', 'Card', readonly=True, states={'draft': [('readonly', False)]})
     
