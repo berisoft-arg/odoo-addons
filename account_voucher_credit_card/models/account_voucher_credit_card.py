@@ -10,8 +10,7 @@ class AccountVoucherCreditCard(models.Model):
     _name = 'account.voucher.credit.card'
     _description = 'Account Voucher Credit Card'
     
-    
-    
+        
     name_card = fields.Many2one('res.card', 'Card', 
                                 readonly=True, 
                                 required=True, 
@@ -37,12 +36,7 @@ class AccountVoucherCreditCard(models.Model):
         copy=False,
         index=True,)
 
-    # partner_id = fields.Many2one(
-    #     related='operation_ids.partner_id',
-    #     store=True,
-    #     index=True,
-    #     string='Last operation partner',)
-    
+       
     amount = fields.Monetary(
         currency_field='currency_id',
         readonly=True,
