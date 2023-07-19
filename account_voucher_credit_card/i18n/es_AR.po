@@ -1,0 +1,272 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_voucher_credit_card
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-19 14:20+0000\n"
+"PO-Revision-Date: 2023-07-19 14:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_voucher_credit_card
+#: model:ir.model,name:account_voucher_credit_card.model_account_voucher_credit_card
+msgid "Account Voucher Credit Card"
+msgstr ""
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__amount_company_currency
+msgid "Amount Company Currency"
+msgstr "Importe en la Moneda de la Compañía"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields.selection,name:account_voucher_credit_card.selection__account_voucher_credit_card__state__cancel
+msgid "Cancelado"
+msgstr ""
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__name
+#: model_terms:ir.ui.view,arch_db:account_voucher_credit_card.view_card_form
+msgid "Card"
+msgstr "Tarjeta de Crédito"
+
+#. module: account_voucher_credit_card
+#: model:ir.actions.act_window,name:account_voucher_credit_card.action_res_card_form
+#: model:ir.model,name:account_voucher_credit_card.model_res_card
+#: model:ir.ui.menu,name:account_voucher_credit_card.menu_action_res_card_form
+#: model_terms:ir.ui.view,arch_db:account_voucher_credit_card.view_card_tree
+msgid "Cards"
+msgstr "Tarjetas de Crédito"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,help:account_voucher_credit_card.field_account_voucher_credit_card__company_id
+msgid "Company related to this journal"
+msgstr "Compañía relacionada con este diario"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__coupon_number
+msgid "Coupon"
+msgstr "Cupón"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__coupon_number
+msgid "Coupon Number"
+msgstr "Cupón N°"
+
+#. module: account_voucher_credit_card
+#: model_terms:ir.actions.act_window,help:account_voucher_credit_card.action_res_card_form
+msgid "Create a new credit card"
+msgstr "Crear una nueva tarjeta de crédito/débito"
+
+#. module: account_voucher_credit_card
+#: model_terms:ir.actions.act_window,help:account_voucher_credit_card.action_installments_card_form
+msgid "Create a new installments plan credit card"
+msgstr "Cree un nuevo plan de cuotas para tarjetas de crédito"
+
+#. module: account_voucher_credit_card
+#: model_terms:ir.actions.act_window,help:account_voucher_credit_card.action_res_card_form
+msgid ""
+"Create and manage credit cards for the companies that will be managed by "
+"Odoo from here."
+msgstr ""
+"Cree y administre tarjetas de crédito/débito para las compañías que serán "
+"administradas por Odoo desde aquí."
+
+#. module: account_voucher_credit_card
+#: model_terms:ir.actions.act_window,help:account_voucher_credit_card.action_installments_card_form
+msgid ""
+"Create and manage installments plan credit cards for the companies that will"
+" be managed by Odoo from here."
+msgstr ""
+"Cree y adminbistre plan de cuotas para tarjetas de crédito/débito para las "
+"compañías que serán administradas por Odoo desde aquí."
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__create_uid
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__create_uid
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__create_date
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__create_date
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_voucher_credit_card
+#: model:account.payment.method,name:account_voucher_credit_card.account_payment_method_outbound_credit_card
+msgid "Delivered Credit Card"
+msgstr "Tarjeta de Crédito Entregada"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__journal_id
+msgid "Diario"
+msgstr ""
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__display_name
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__display_name
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__id
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__id
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__id
+msgid "ID"
+msgstr ""
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__installments
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__installments
+msgid "Installements Card"
+msgstr "Cuotas"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__name
+#: model_terms:ir.ui.view,arch_db:account_voucher_credit_card.view_installments_card_form
+msgid "Installments Card"
+msgstr "Cuotas"
+
+#. module: account_voucher_credit_card
+#: model:ir.actions.act_window,name:account_voucher_credit_card.action_installments_card_form
+#: model:ir.model,name:account_voucher_credit_card.model_installments_card
+#: model:ir.ui.menu,name:account_voucher_credit_card.menu_action_installments_card_form
+#: model_terms:ir.ui.view,arch_db:account_voucher_credit_card.view_installments_card_tree
+msgid "Installments Cards"
+msgstr "Cuotas"
+
+#. module: account_voucher_credit_card
+#: model:ir.model,name:account_voucher_credit_card.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card____last_update
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card____last_update
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__write_uid
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__write_uid
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__write_date
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_installments_card__write_date
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_res_card__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__lot_number
+msgid "Lot"
+msgstr "Lote"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__lot_number
+msgid "Lot Number"
+msgstr "Lote N°"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__company_currency_id
+msgid "Moneda de la empresa"
+msgstr "moneda de la compañía"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__voucher_name
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__payment_date
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: account_voucher_credit_card
+#: model:ir.model,name:account_voucher_credit_card.model_account_payment_method
+msgid "Payment Methods"
+msgstr "Métodos de pago"
+
+#. module: account_voucher_credit_card
+#: model:ir.model,name:account_voucher_credit_card.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: account_voucher_credit_card
+#: model:account.payment.method,name:account_voucher_credit_card.account_payment_method_inbound_credit_card
+msgid "Received Credit Card"
+msgstr "Tarjeta de Crédito Recibida"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__state
+msgid "State"
+msgstr "Estado"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_bank_statement_import_journal_creation__is_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_journal__is_credit_card
+msgid "Tarjeta de Credito"
+msgstr "Tarjeta de Crédito"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__is_credit_card
+msgid "Tarjeta de credito"
+msgstr "Tarjeta de Crédito"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.constraint,message:account_voucher_credit_card.constraint_res_card_name_uniq
+msgid "The Card name must be unique!"
+msgstr "El nombre de la tarjeta debe ser único!"
+
+#. module: account_voucher_credit_card
+#: model:ir.model.constraint,message:account_voucher_credit_card.constraint_installments_card_name_uniq
+msgid "The Installments Plan Card name must be unique!"
+msgstr "El plan de cuotas para el nombre de la tarjeta debe ser único!"
+
+#. module: account_voucher_credit_card
+#: model_terms:ir.ui.view,arch_db:account_voucher_credit_card.view_account_payment_form_inherited
+msgid "Total"
+msgstr ""
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__voucher_id
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_voucher_credit_card__voucher_id
+msgid "Voucher"
+msgstr ""
+
+#. module: account_voucher_credit_card
+#: model:ir.model.fields,field_description:account_voucher_credit_card.field_account_payment__voucher_ids
+msgid "Vouchers"
+msgstr ""

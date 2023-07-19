@@ -1,0 +1,83 @@
+<odoo>
+
+    <record id="view_account_payment_form_inherited" model="ir.ui.view">
+        <field name="name">account.payment.form.inherited</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form" />
+        <field name="arch" type="xml">
+            
+            
+            <field name='ref' position="after">
+                <div colspan="2" attrs="{'invisible': [('payment_method_code', 'not in', ['inbound_credit_card', 'outbound_credit_card'])]}">
+                    <group name="vouchers">
+                        <field name="voucher_id" attrs="{'invisible': [('voucher_id', '=', False)]}"/>
+                        <field name="voucher_ids" attrs="{'invisible': ['|',  '|', ('voucher_ids', '=', []), ('voucher_id', '!=', False), ('payment_method_code', 'not in', ['inbound_credit_card'])]}">
+                            <tree edit="false" create="false">
+                                <field name="name"/>
+                                <field name="payment_date"/>
+                                <field name="amount" sum="Total"/>
+                                <field name="state" invisible="1"/>
+                                <field name="currency_id" invisible="1"/>
+                            </tree>
+                        </field>
+                        <label for="voucher_ids" colspan="2" attrs="{'invisible': ['|', ('payment_method_code', '!=', 'outbound_credit_card'), ('payment_type', 'not in', ['outbound'])]}"/>
+                        <field name="voucher_ids"
+                            nolabel="1" colspan="2"
+                            options="{'no_create': True}"
+                            domain="[('journal_id', '=', journal_id)]"
+                            attrs="{'invisible': ['|', ('payment_method_code', '!=', 'outbound_credit_card'), ('payment_type', 'not in', ['outbound'])], 'required': [('payment_method_code', '=', 'outbound_credit_card'), ('payment_type', 'in', ['outbound']),  ('state', '!=', 'cancelled')]}">
+                            <tree edit="false">
+                                <field name="name"/>
+                                <field name="payment_date"/>
+                                <field name="amount" sum="Total"/>
+                                <field name="state" invisible="1"/>
+                                <field name="currency_id" invisible="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group name="voucher_data" states='draft'>
+                        <newline/>
+                        <field name="card" attrs="{'invisible': [('payment_method_code', 'not in', ['inbound_credit_card'])], 'required': [('payment_method_code', '=', 'inbound_credit_card')]}"/>
+                        <field name="installments" attrs="{'invisible': [('payment_method_code', 'not in', ['inbound_credit_card'])], 'required': [('payment_method_code', '=', 'inbound_credit_card')]}"/>
+                        <field name="lot_number" attrs="{'invisible': [('payment_method_code', 'not in', ['inbound_credit_card'])], 'required': [('payment_method_code', '=', 'inbound_credit_card')]}"/>
+                        <field name="coupon_number" attrs="{'invisible': [('payment_method_code', 'not in', ['inbound_credit_card'])], 'required': ('payment_method_code', '=', 'inbound_credit_card')}"/>
+                        <field name="name" attrs="{'invisible': [('payment_method_code', 'not in', ['inbound_credit_card'])], 'required': [('payment_method_code', '=', 'inbound_credit_card')]}"/>
+                    </group>
+                </div>
+            </field>
+            <label for="amount" position="before">
+                <label for="amount" attrs="{'invisible': [('payment_method_code', '!=', 'outbound_credit_card')]}"/>
+                <div name="readonly_amount_div" class="o_row" attrs="{'invisible': [('payment_method_code', '!=', 'outbound_credit_card')]}">
+                    <field name="amount" readonly="True"/>
+                    <field name="other_currency" />
+                    <field name="currency_id" readonly="True" groups="base.group_multi_currency" attrs="{'invisible': [('other_currency', '=', False)]}"/>
+                </div>
+            </label>
+            <label for="amount" position="attributes">
+                <attribute name="attrs">{'invisible': [('payment_method_code', '=', 'outbound_credit_card')]}</attribute>
+            </label>
+            <div name="amount_div" position="attributes">
+                <attribute name="attrs">{'invisible': [('payment_method_code', '=', 'outbound_credit_card')]}</attribute>
+            </div>
+            <!-- <field name="payment_method_line_id" position="after">
+                <field name="check_deposit_type" widget="radio" attrs="{'invisible': ['|', ('payment_method_code', '!=', 'outbound_credit_card')]}"/>
+            </field> -->
+        </field>
+    </record>
+
+    <!--  Checks search view -->
+    <record id="view_account_payment_search" model="ir.ui.view">
+        <field name="name">account.payment.check.search</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_search"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="voucher_ids"/>
+            </field>
+            <!-- <xpath expr="//filter[@name='state_sent']" position="before">
+                <filter string="Checks To Print and Numerate" domain="[('payment_method_id.code', '=', 'issue_check'), ('state','=','draft'), ('check_name', '=', False)]" name="checks_to_numerate"/>
+            </xpath> -->
+        </field>
+    </record>
+
+</odoo>
