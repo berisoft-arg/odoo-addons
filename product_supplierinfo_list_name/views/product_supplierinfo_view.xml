@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+  
+    <record model="ir.ui.view" id="product_supplierinfo_name_list">
+      <field name="name">product.supplierinfo.name.list</field>
+      <field name="model">product.supplierinfo</field>
+      <field name="inherit_id" ref="product.product_supplierinfo_tree_view"/>
+      <field name="arch" type="xml">
+          <field name="currency_id" position="after">
+              <field name="list_name"/>  
+          </field>
+      </field>
+    </record>
+    
+  </data>
+</odoo>
