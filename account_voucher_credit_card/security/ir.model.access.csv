@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_res_card_user,res.card.user,model_res_card,base.group_user,1,1,1,1
-access_installments_card_user,instlallments.card.user,model_installments_card,base.group_user,1,1,1,1
-account_voucher_credit_card_access_full,account_voucher_credit_card_access_full,model_account_voucher_credit_card,account.group_account_invoice,1,1,1,1
-account_voucher_credit_card_access_global,account_voucher_credit_card_access_global,model_account_voucher_credit_card,,1,0,0,0
