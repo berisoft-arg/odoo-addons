@@ -7,4 +7,4 @@ Configurado el volumen y/o peso en cada producto, computa la cantidad de existen
 
 
 <h4>product_supplierinfo_list_name:</h4>
-<p>Agrega nombre o numero de Lista de Precio en Tarifa Proveedor. </p>
+<p>Agrega una columna para el nombre o numero de Lista de Precio en Tarifa Proveedor. </p>
