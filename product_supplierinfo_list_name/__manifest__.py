@@ -20,5 +20,7 @@
         # 'security/ir.model.access.csv',
         'views/product_supplierinfo_view.xml',
     ],
+
+    'installable': True,
         
 }
