@@ -21,4 +21,6 @@
         'views/product_supplierinfo_view.xml',
     ],
     
+    'installable': True,
+    
 }
