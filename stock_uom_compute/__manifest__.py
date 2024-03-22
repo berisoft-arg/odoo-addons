@@ -22,4 +22,6 @@
         # 'security/ir.model.access.csv',
         'views/stock_valuation_layer.xml',
             ],
+    
+    'installable': True,
    }
