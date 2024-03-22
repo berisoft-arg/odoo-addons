@@ -16,7 +16,8 @@
     'version': '16.0',
     'depends': ['product'],
     
-    'data': [        
+    'data': [
+        # 'security/ir.model.access.csv',
         'views/product_supplierinfo_view.xml',
     ],
         
