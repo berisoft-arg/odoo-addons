@@ -15,7 +15,7 @@
     'author': "Sergio Ariel Ameghino",
     'website': "ariel.ameghino@gmail.com",
     'category': 'Inventory',
-    'version': '0.1',
+    'version': '16.0.1.0.0',
 
     'depends': ['base', 'stock'],
 
