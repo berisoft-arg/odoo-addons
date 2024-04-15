@@ -13,7 +13,7 @@
     'author': "Sergio Ariel Ameghino",
     'website': "ariel.ameghino@gmail.com",
     'category': 'Purchase',
-    'version': '15.0',
+    'version': '15.0.1.0.0',
     'depends': ['product'],
     
     'data': [
