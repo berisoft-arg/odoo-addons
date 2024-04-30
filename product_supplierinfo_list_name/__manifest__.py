@@ -11,7 +11,7 @@
     """,
 
     'author': "Sergio Ariel Ameghino",
-    'website': "ariel.ameghino@gmail.com",    
+    'website': "https://github.com/SergioAmeghino/odoo-addons.git",    
     'category': 'Purchase',
     'version': '16.0.1.0.0',
     'depends': ['product'],
