@@ -15,7 +15,7 @@
     'author': "Sergio Ariel Ameghino",
     'website': "https://github.com/SergioAmeghino/odoo-addons.git",
     'category': 'Inventory',
-    'version': '16.0.1.0.0',
+    'version': '17.0.1.0.0',
 
     'depends': ['base', 'stock'],
 
