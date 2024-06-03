@@ -4,14 +4,14 @@
 {
     "name": "Account Payment Credit Card",
     "summary": "",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Account",
     "website": "https://github.com/SergioAmeghino/odoo-addons.git",
     "author": "juanpgarza, Sergio Ariel Ameghino"
     "license": "AGPL-3",
     "depends": [
         "account",
-        "account_payment_group",
+        #"account_payment_group",
         ],
     "data": [
         # 'data/account_payment_method_data.xml',
