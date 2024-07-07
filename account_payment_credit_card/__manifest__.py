@@ -7,7 +7,7 @@
     "version": "16.0.1.0.0",
     "category": "Account",
     "website": "https://github.com/SergioAmeghino/odoo-addons.git",
-    "author": "juanpgarza, Sergio Ariel Ameghino"
+    "author": "juanpgarza, Sergio Ariel Ameghino",
     "license": "AGPL-3",
     "depends": [
         "account",
